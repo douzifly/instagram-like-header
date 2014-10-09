@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <douzifly.android.instagramscrollheader.ScrollViewPlus
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View 
+                android:id="@+id/emptyView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                />
+
+            <TextView
+                android:id="@+id/txtContent"
+                android:layout_width="match_parent"
+                android:layout_height="1024dp"
+                android:text="Content here Content here Content here Content here Content here Content here Content here Content here Content here Content here Content here "
+                android:textSize="50sp" />
+        </LinearLayout>
+    </douzifly.android.instagramscrollheader.ScrollViewPlus>
+
+    <include
+        android:id="@+id/coverHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header" />
+
+</FrameLayout>
